@@ -1,0 +1,55 @@
+<ons-page id="page-item-ops">
+	<ons-toolbar>
+		<div><ons-back-button>Back</ons-back-button></div>
+		<div class="left" id="id-page-title">{title}</div>
+		<div class="right">
+			<ons-toolbar-button id="id-submit">
+				<ons-icon icon="md-check"></ons-icon>
+			</ons-toolbar-button>
+		</div>
+	</ons-toolbar>
+	<ons-progress-bar id="id-loading"></ons-progress-bar>
+		<ons-card>
+			<div>
+				<b>Time</b>
+				<ons-button id="id-time-help" style="float:right;">?</ons-button>
+			</div>
+			<div>
+				<ons-input id="id-item-title" type="text" placeholder="eg. 0700 weekdays #tag1 #tag2" />
+			</div>
+		</ons-card>
+		<ons-card>
+			<div><b>Message</b></div>
+			<div>
+				<ons-input id="id-item-msg" type="text" placeholder="eg. Wake up for school" />
+			</div>
+		</ons-card>
+		<ons-card>
+			<div><b>Alarm</b></div>
+			<div>
+				<ons-select select-id="id-item-alarm">
+					<option>A Real Hoot</option>
+					<option>Bright Morning</option>
+					<option>Cuckoo Clock</option>
+					<option>Early Twilight</option>
+					<option>Full of Wonder</option>
+					<option>Gentle Breeze</option>
+					<option>Icicles</option>
+					<option>Jump Start</option>
+					<option>Loose Change</option>
+					<option Fog">Rolling Fog</option>
+					<option>Spokes</option>
+					<option>Sunflower</option>
+				</ons-select>
+			</div>
+		</ons-card>
+	</div>
+	<ons-popover id="id-time-help-popover" direction="down" cancelable="true" width="80%">
+		<div class="card">
+			<ons-button id="id-time-help-popover-dismiss" modifier="quiet" style="float:right;">&#x2573;</ons-button>
+			<p>Enter time in 24-hour format.</p>
+			<p>By default, alarms are set to trigger daily.</p>
+			<p>Use <i>"Mon"</i>, <i>"Tue"</i> ... <i>"Sun"</i>, or <i>"Weekdays"</i> and <i>"Weekends"</i> to schedule on specific days.</p>
+		</div>
+	</ons-popover>
+</ons-page>
